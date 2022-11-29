@@ -1,0 +1,22 @@
+@use "./colors.scss" as *;
+@use "./font-sizes.scss" as *;
+@use "./spacers.scss" as *;
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$enable-negative-margins: true;
+
+$font-sizes: map-merge($font-sizes, $app-font-sizes);
+$theme-colors: map-merge($theme-colors, $app-colors);
+$spacers: map-merge($spacers, $app-spacers);
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins/";
+@import "../../node_modules/bootstrap/scss/utilities/";
+
+@import "./utilities";
+
+$utilities: map-merge($utilities, $app-utilities);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

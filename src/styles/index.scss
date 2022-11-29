@@ -1,0 +1,20 @@
+@use "./utils" as *;
+@use "./custom";
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0 !important;
+}

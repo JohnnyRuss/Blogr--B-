@@ -1,0 +1,21 @@
+.main-nav-drop-down {
+  .dropdown-menu {
+    text-align: center;
+    background: rgb(200, 200, 203);
+
+    @media (min-width: 40em) {
+      text-align: start;
+      background: #fff;
+    }
+  }
+
+  .dropdown-item {
+    font-size: 1.6rem;
+  }
+
+  @media (min-width: 40em) {
+    #nav-dropdown {
+      color: white;
+    }
+  }
+}

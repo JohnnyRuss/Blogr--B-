@@ -1,0 +1,127 @@
+$app-utilities: (
+  "cursor": (
+    property: cursor,
+    class: cursor,
+    values: (
+      pointer: pointer,
+      grab: grab,
+    ),
+  ),
+  "background-color":
+    map-merge(
+      map-get($utilities, "background-color"),
+      (
+        responsive: true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "background-color"), "values"),
+            (
+              transparent: transparent,
+              "none": none,
+            )
+          ),
+      )
+    ),
+  "height":
+    map-merge(
+      map-get($utilities, height),
+      (
+        values:
+          map-merge(
+            map-get(map-get($utilities, height), "values"),
+            (
+              "max": max-content,
+              "42vw": 42vw,
+              "30vw": 30vw,
+              "50vw": 50vw,
+              "70vw": 70vw,
+            )
+          ),
+      )
+    ),
+  "width":
+    map-merge(
+      map-get($utilities, "width"),
+      (
+        responsive: true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "width"), "values"),
+            (
+              "full": 100%,
+              "half": 50%,
+            )
+          ),
+      )
+    ),
+  "shadow":
+    map-merge(
+      map-get($utilities, "shadow"),
+      (
+        responsive: true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "shadow"), "values"),
+            (
+              large: 0px 3px 15px rgba(0, 0, 0, 0.5),
+            )
+          ),
+      )
+    ),
+  "rounded":
+    map-merge(
+      map-get($utilities, "rounded"),
+      (
+        responsive: true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "rounded"), "values"),
+            (
+              "app-sm": 2rem,
+              "none": none,
+            )
+          ),
+      )
+    ),
+  "color":
+    map-merge(
+      map-get($utilities, "color"),
+      (
+        responsive: true,
+      )
+    ),
+  "translate-x": (
+    property: transform,
+    class: "translate-x",
+    responsive: true,
+    values: (
+      "n50": translateX(-50%),
+    ),
+  ),
+  "translate-y": (
+    property: transform,
+    class: "translate-y",
+    responsive: true,
+    values: (
+      "n25": translateY(-25%),
+      "n30": translateY(-30%),
+      "n35": translateY(-35%),
+      "n50": translateY(-50%),
+      "n100": translateY(-100%),
+    ),
+  ),
+  "start":
+    map-merge(
+      map-get($utilities, "start"),
+      (
+        responsive: true,
+        values:
+          map-merge(
+            map-get(map-get($utilities, "start"), "values"),
+            (
+              25: 25%,
+            )
+          ),
+      )
+    ),
+);

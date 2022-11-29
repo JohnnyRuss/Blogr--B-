@@ -1,0 +1,39 @@
+$cta: rgb(255, 82, 93);
+$red-tint: rgb(255, 82, 93);
+$cta-hover: rgb(255, 122, 133);
+$red-tint-light: rgb(255, 122, 133);
+$heading: rgb(31, 63, 91);
+$dark-blue: rgb(31, 63, 91);
+$txt: rgb(255, 255, 255);
+$app-white: rgb(255, 255, 255);
+$txt-footer: rgb(200, 200, 203);
+$grayish-blue: rgb(200, 200, 203);
+$body-copy: rgb(75, 88, 98);
+$dark-grayish-blue: rgb(75, 88, 98);
+$bg-footer: rgb(37, 37, 45);
+$black-blue: rgb(37, 37, 45);
+$red-tint-sec: rgb(255, 61, 84);
+$red-tint-sec-light: rgb(255, 143, 112);
+$dark-gray-blue: rgb(44, 45, 63);
+$dark-gray-blue-tint: rgb(63, 65, 100);
+
+$app-colors: (
+  "cta": $cta,
+  "red-tint": $red-tint,
+  "cta-hover": $cta-hover,
+  "red-tint-light": $red-tint-light,
+  "heading": $heading,
+  "dark-blue": $dark-blue,
+  "txt": $txt,
+  "app-white": $app-white,
+  "txt-footer": $txt-footer,
+  "grayish-blue": $grayish-blue,
+  "body-copy": $body-copy,
+  "dark-grayish-blue": $dark-grayish-blue,
+  "footer": $bg-footer,
+  "black-blue": $black-blue,
+  "red-tint-sec": $red-tint-sec,
+  "red-tint-sec-light": $red-tint-sec-light,
+  "dark-gray-blue": $dark-gray-blue,
+  "dark-gray-blue-tint": $dark-gray-blue-tint,
+);

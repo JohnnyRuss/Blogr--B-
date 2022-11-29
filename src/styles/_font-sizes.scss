@@ -1,0 +1,19 @@
+$app-h1: 5rem;
+$app-h2: 3.8rem;
+$app-h3: 2.8rem;
+$app-h4: 2.2rem;
+$lg: 2rem;
+$base: 1.6rem;
+$sm: 1.4rem;
+$xsm: 1.2rem;
+
+$app-font-sizes: (
+  "app-h1": $app-h1,
+  "app-h2": $app-h2,
+  "app-h3": $app-h3,
+  "app-h4": $app-h4,
+  "lg": $lg,
+  "base": $base,
+  "sm": $sm,
+  "xsm": $xsm,
+);

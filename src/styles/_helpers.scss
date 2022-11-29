@@ -1,0 +1,97 @@
+@use "./colors.scss" as *;
+
+/* BACKGROUND-IMAGES */
+
+.bg-img {
+  background-size: 45% !important;
+  background-repeat: no-repeat !important;
+}
+
+/* INVASIONS */
+
+.invasion {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    z-index: 9;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &::after {
+    z-index: 4;
+    background: $txt;
+    width: 9.8rem;
+    height: 9.8rem;
+  }
+}
+
+.invasion-bottom-left {
+  &::before,
+  &::after {
+    bottom: 0;
+    left: 0;
+  }
+
+  &::before {
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+
+  &::after {
+    border-top-right-radius: 100%;
+    bottom: -0.2rem;
+  }
+}
+
+.invasion-bottom-right {
+  &::before,
+  &::after {
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+  }
+
+  &::before {
+    border-top-right-radius: 100%;
+  }
+
+  &::after {
+    border-bottom-left-radius: 100%;
+    bottom: 0.2rem;
+  }
+}
+
+@mixin generate-invasion($pos) {
+  @if $pos == bottom-left-cta {
+    @extend .invasion-bottom-left;
+
+    &::before {
+      background: $cta;
+    }
+  } @else if $pos==bottom-left-dark-blue {
+    @extend .invasion-bottom-left;
+
+    &::before {
+      background: $dark-gray-blue;
+    }
+  } @else if $pos==bottom-right-dark-blue {
+    @extend .invasion-bottom-right;
+
+    &::before {
+      background: $dark-gray-blue;
+    }
+  } @else if $pos==bottom-right-footer {
+    @extend .invasion-bottom-right;
+
+    &::before {
+      background: $bg-footer;
+    }
+  }
+}
