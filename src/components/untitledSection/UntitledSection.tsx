@@ -10,8 +10,8 @@ const UntitledSection: React.FC = () => {
       fluid
       className="bgi-pattern-laptop invasion-bottom-right-footer"
     >
-      <Container className="py-4rem py-md-14rem d-flex flex-column flex-md-row">
-        <Figure className="d-md-none">
+      <Container className="py-6rem py-lg-14rem py-xxl-20rem d-flex flex-column flex-lg-row">
+        <Figure className="d-lg-none d-flex justify-content-center">
           <Figure.Image
             src="/assets/illustration-laptop-mobile.svg"
             alt="untitled illustration"

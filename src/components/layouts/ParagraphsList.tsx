@@ -15,7 +15,7 @@ const ParagraphsList: React.FC<ParagraphsListType> = ({
 }) => {
   return (
     <div
-      className={`w-full w-md-half d-flex flex-column gap-5 text-center text-md-start ${
+      className={`w-full w-lg-half d-flex flex-column gap-5 text-center text-lg-start ${
         containerClasses || ""
       }`}
     >

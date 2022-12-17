@@ -24,7 +24,7 @@
 .bgi-pattern-editor {
   @extend .bg-img;
 
-  @media (min-width: 40em) {
+  @media (min-width: 62em) {
     background-position: 122%;
     background-image: url("../../public/assets/illustration-editor-desktop.svg");
   }
@@ -45,7 +45,7 @@
 .bgi-pattern-laptop {
   @extend .bg-img;
 
-  @media (min-width: 40em) {
+  @media (min-width: 62em) {
     background: url("../../public/assets/illustration-laptop-desktop.svg");
     background-position: -23% !important;
   }

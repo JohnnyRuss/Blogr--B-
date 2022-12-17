@@ -10,11 +10,11 @@ const Future: React.FC = () => {
       fluid
       className="bgi-pattern-editor invasion-bottom-right-dark-blue"
     >
-      <Container className="pt-4rem pt-md-8rem pb-14rem">
+      <Container className="py-6rem py-lg-14rem py-xxl-20rem">
         <h3 className="mb-3rem mb-md-8rem fs-app-h3 text-center text-heading">
           Designed for future
         </h3>
-        <Figure className="d-md-none">
+        <Figure className="d-lg-none d-flex justify-content-center">
           <Figure.Image
             src="/assets/illustration-editor-mobile.svg"
             alt="future editor illustration"
